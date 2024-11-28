@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:/ZFj+VEZCmdbJpwNroj1OjMlaXGMjs2Cnv2YHKgN" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:j0CY8TH4BeKXEIHYXIr3k/egydWbSJt1O528N/hE" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -77,7 +77,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Xe1NrR/KDcat6O4Zff/Vi4Xw857XFv9yXB8Kp7FQ" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:AGRY8IjoknXjDzeQz2wbi8yfeWhQ4Q4gH6usr9Hs" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -106,7 +106,7 @@
     <routinesParameter id="_oyuJkHV-EeqtycFpU7rNMQ" name="TalendStringUtil"/>
     <routinesParameter id="_oyoqAHV-EeqtycFpU7rNMQ" name="TalendString"/>
   </parameters>
-  <node componentName="tAS400Input" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="224">
+  <node componentName="tAS400Input" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -117,7 +117,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;ACGPROD&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="AS400" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;dkhuon&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:m7P3CJ93ouCiEB9159McJ4Yr/MzeEKU6IkjWGvPc19Iopk/LdjhT"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:9JLIF9NwdMX/SVurwfj1JildsHy/66f0J5uwIQw15yKsj89ZIbu3"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;PCCAD0&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -190,7 +190,7 @@
       <column comment="" defaultValue="" key="false" length="5" name="LVPA_Niveau_4" nullable="false" originalDbColumnName="LVPA-Niveau 4" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="224">
+  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_1" show="false"/>
     <elementParameter field="TABLE" name="GROUPBYS">
       <elementValue elementRef="OUTPUT_COLUMN" value="LVDF_Numero_dossier_facturation"/>
@@ -270,7 +270,132 @@
       <column comment="" defaultValue="" key="false" length="5" name="LVPA_Niveau_4" nullable="false" originalDbColumnName="LVPA-Niveau 4" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="224">
+  <node componentName="tUniqRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUniqRow_1" show="false"/>
+    <elementParameter field="TABLE" name="UNIQUE_KEY">
+      <elementValue elementRef="SCHEMA_COLUMN" value="LVDF_Numero_dossier_facturation"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LVME_Numero_menage"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="W_LV_Nom_1__menage_"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="W_LV_Prenom_1__menage_"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="W_LV_Nom_2__menage_"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="W_LV_prenom_2__menage_"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="W_LVPC_Date_entree"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="W_LVPC_Date_depart"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="W_CV_Solde_credit"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="W_CV_Solde_debit"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PCCA_Solde_DG_credit"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PCCA_Solde_DG_debit"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PCCA_Solde_APL_credit"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PCCA_Solde_APL_debit"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LVPA_Niveau_1"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LVPA_Niveau_2"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LVPA_Niveau_3"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LVPA_Niveau_4"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ONLY_ONCE_EACH_DUPLICATED_KEY" value="false"/>
+    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="false"/>
+    <elementParameter field="OPENED_LIST" name="BUFFER_SIZE" value="M" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIRECTORY" value="" show="false"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tUniqRow_1">
+      <column comment="" defaultValue="" key="true" length="7" name="LVDF_Numero_dossier_facturation" nullable="false" originalDbColumnName="LVDF-Numero dossier facturation" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="LVME_Numero_menage" nullable="false" originalDbColumnName="LVME-Numero menage" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="W_LV_Nom_1__menage_" nullable="false" originalDbColumnName="W-LV Nom 1 (menage)" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="W_LV_Prenom_1__menage_" nullable="false" originalDbColumnName="W-LV Prenom 1 (menage)" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="W_LV_Nom_2__menage_" nullable="false" originalDbColumnName="W-LV Nom 2 (menage)" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="W_LV_prenom_2__menage_" nullable="false" originalDbColumnName="W-LV prenom 2 (menage)" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="W_LVPC_Date_entree" nullable="false" originalDbColumnName="W-LVPC Date entree" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="W_LVPC_Date_depart" nullable="false" originalDbColumnName="W-LVPC Date depart" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="W_CV_Solde_credit" nullable="false" originalDbColumnName="W-CV-Solde credit" pattern="" precision="2" sourceType="FLOAT" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="W_CV_Solde_debit" nullable="false" originalDbColumnName="W-CV-Solde debit" pattern="" precision="2" sourceType="FLOAT" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="PCCA_Solde_DG_credit" nullable="false" originalDbColumnName="PCCA-Solde DG credit" pattern="" precision="2" sourceType="FLOAT" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="PCCA_Solde_DG_debit" nullable="false" originalDbColumnName="PCCA-Solde DG debit" pattern="" precision="2" sourceType="FLOAT" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="PCCA_Solde_APL_credit" nullable="false" originalDbColumnName="PCCA-Solde APL credit" pattern="" precision="2" sourceType="FLOAT" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="PCCA_Solde_APL_debit" nullable="false" originalDbColumnName="PCCA-Solde APL debit" pattern="" precision="2" sourceType="FLOAT" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="LVPA_Niveau_1" nullable="false" originalDbColumnName="LVPA-Niveau 1" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="LVPA_Niveau_2" nullable="false" originalDbColumnName="LVPA-Niveau 2" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="LVPA_Niveau_3" nullable="false" originalDbColumnName="LVPA-Niveau 3" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="LVPA_Niveau_4" nullable="false" originalDbColumnName="LVPA-Niveau 4" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="UNIQUE" name="UNIQUE">
+      <column comment="" defaultValue="" key="true" length="7" name="LVDF_Numero_dossier_facturation" nullable="false" originalDbColumnName="LVDF-Numero dossier facturation" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="LVME_Numero_menage" nullable="false" originalDbColumnName="LVME-Numero menage" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="W_LV_Nom_1__menage_" nullable="false" originalDbColumnName="W-LV Nom 1 (menage)" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="W_LV_Prenom_1__menage_" nullable="false" originalDbColumnName="W-LV Prenom 1 (menage)" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="W_LV_Nom_2__menage_" nullable="false" originalDbColumnName="W-LV Nom 2 (menage)" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="W_LV_prenom_2__menage_" nullable="false" originalDbColumnName="W-LV prenom 2 (menage)" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="W_LVPC_Date_entree" nullable="false" originalDbColumnName="W-LVPC Date entree" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="W_LVPC_Date_depart" nullable="false" originalDbColumnName="W-LVPC Date depart" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="W_CV_Solde_credit" nullable="false" originalDbColumnName="W-CV-Solde credit" pattern="" precision="2" sourceType="FLOAT" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="W_CV_Solde_debit" nullable="false" originalDbColumnName="W-CV-Solde debit" pattern="" precision="2" sourceType="FLOAT" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="PCCA_Solde_DG_credit" nullable="false" originalDbColumnName="PCCA-Solde DG credit" pattern="" precision="2" sourceType="FLOAT" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="PCCA_Solde_DG_debit" nullable="false" originalDbColumnName="PCCA-Solde DG debit" pattern="" precision="2" sourceType="FLOAT" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="PCCA_Solde_APL_credit" nullable="false" originalDbColumnName="PCCA-Solde APL credit" pattern="" precision="2" sourceType="FLOAT" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="PCCA_Solde_APL_debit" nullable="false" originalDbColumnName="PCCA-Solde APL debit" pattern="" precision="2" sourceType="FLOAT" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="LVPA_Niveau_1" nullable="false" originalDbColumnName="LVPA-Niveau 1" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="LVPA_Niveau_2" nullable="false" originalDbColumnName="LVPA-Niveau 2" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="LVPA_Niveau_3" nullable="false" originalDbColumnName="LVPA-Niveau 3" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="LVPA_Niveau_4" nullable="false" originalDbColumnName="LVPA-Niveau 4" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="DUPLICATE" name="DUPLICATE">
+      <column comment="" defaultValue="" key="true" length="7" name="LVDF_Numero_dossier_facturation" nullable="false" originalDbColumnName="LVDF-Numero dossier facturation" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="LVME_Numero_menage" nullable="false" originalDbColumnName="LVME-Numero menage" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="W_LV_Nom_1__menage_" nullable="false" originalDbColumnName="W-LV Nom 1 (menage)" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="W_LV_Prenom_1__menage_" nullable="false" originalDbColumnName="W-LV Prenom 1 (menage)" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="W_LV_Nom_2__menage_" nullable="false" originalDbColumnName="W-LV Nom 2 (menage)" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="W_LV_prenom_2__menage_" nullable="false" originalDbColumnName="W-LV prenom 2 (menage)" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="W_LVPC_Date_entree" nullable="false" originalDbColumnName="W-LVPC Date entree" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="W_LVPC_Date_depart" nullable="false" originalDbColumnName="W-LVPC Date depart" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="W_CV_Solde_credit" nullable="false" originalDbColumnName="W-CV-Solde credit" pattern="" precision="2" sourceType="FLOAT" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="W_CV_Solde_debit" nullable="false" originalDbColumnName="W-CV-Solde debit" pattern="" precision="2" sourceType="FLOAT" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="PCCA_Solde_DG_credit" nullable="false" originalDbColumnName="PCCA-Solde DG credit" pattern="" precision="2" sourceType="FLOAT" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="PCCA_Solde_DG_debit" nullable="false" originalDbColumnName="PCCA-Solde DG debit" pattern="" precision="2" sourceType="FLOAT" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="PCCA_Solde_APL_credit" nullable="false" originalDbColumnName="PCCA-Solde APL credit" pattern="" precision="2" sourceType="FLOAT" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="PCCA_Solde_APL_debit" nullable="false" originalDbColumnName="PCCA-Solde APL debit" pattern="" precision="2" sourceType="FLOAT" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="LVPA_Niveau_1" nullable="false" originalDbColumnName="LVPA-Niveau 1" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="LVPA_Niveau_2" nullable="false" originalDbColumnName="LVPA-Niveau 2" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="LVPA_Niveau_3" nullable="false" originalDbColumnName="LVPA-Niveau 3" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="LVPA_Niveau_4" nullable="false" originalDbColumnName="LVPA-Niveau 4" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -304,30 +429,34 @@
       <column comment="" defaultValue="" key="false" length="5" name="LVPA_Niveau_3" nullable="false" originalDbColumnName="LVPA-Niveau 3" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="5" name="LVPA_Niveau_4" nullable="false" originalDbColumnName="LVPA-Niveau 4" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
+    <metadata connector="FLOW" label="oui" name="oui"/>
+    <metadata connector="FLOW" label="csv_out" name="csv_out"/>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out" activateCondensedTool="true" rejectInnerJoin="true">
-        <mapperTableEntries name="LVDF_Numero_dossier_facturation" expression="row2.LVDF_Numero_dossier_facturation" type="id_Float"/>
-        <mapperTableEntries name="LVME_Numero_menage" expression="row2.LVME_Numero_menage" type="id_Float"/>
-        <mapperTableEntries name="W_LV_Nom_1__menage_" expression="row2.W_LV_Nom_1__menage_" type="id_String"/>
-        <mapperTableEntries name="W_LV_Prenom_1__menage_" expression="row2.W_LV_Prenom_1__menage_" type="id_String"/>
-        <mapperTableEntries name="W_LV_Nom_2__menage_" expression="row2.W_LV_Nom_2__menage_" type="id_String"/>
-        <mapperTableEntries name="W_LV_prenom_2__menage_" expression="row2.W_LV_prenom_2__menage_" type="id_String"/>
-        <mapperTableEntries name="W_LVPC_Date_entree" expression="row2.W_LVPC_Date_entree" type="id_Date"/>
-        <mapperTableEntries name="W_LVPC_Date_depart" expression="row2.W_LVPC_Date_depart" type="id_Date"/>
-        <mapperTableEntries name="W_CV_Solde_credit" expression="row2.W_CV_Solde_credit" type="id_Float"/>
-        <mapperTableEntries name="W_CV_Solde_debit" expression="row2.W_CV_Solde_debit" type="id_Float"/>
-        <mapperTableEntries name="PCCA_Solde_DG_credit" expression="row2.PCCA_Solde_DG_credit" type="id_Float"/>
-        <mapperTableEntries name="PCCA_Solde_DG_debit" expression="row2.PCCA_Solde_DG_debit" type="id_Float"/>
-        <mapperTableEntries name="PCCA_Solde_APL_credit" expression="row2.PCCA_Solde_APL_credit" type="id_Float"/>
-        <mapperTableEntries name="PCCA_Solde_APL_debit" expression="row2.PCCA_Solde_APL_debit" type="id_Float"/>
-        <mapperTableEntries name="LVPA_Niveau_1" expression="row2.LVPA_Niveau_1" type="id_Integer"/>
-        <mapperTableEntries name="LVPA_Niveau_2" expression="row2.LVPA_Niveau_2" type="id_Integer"/>
-        <mapperTableEntries name="LVPA_Niveau_3" expression="row2.LVPA_Niveau_3" type="id_Integer"/>
-        <mapperTableEntries name="LVPA_Niveau_4" expression="row2.LVPA_Niveau_4" type="id_Integer"/>
+        <mapperTableEntries name="LVDF_Numero_dossier_facturation" expression="row4.LVDF_Numero_dossier_facturation" type="id_Float"/>
+        <mapperTableEntries name="LVME_Numero_menage" expression="row4.LVME_Numero_menage" type="id_Float"/>
+        <mapperTableEntries name="W_LV_Nom_1__menage_" expression="row4.W_LV_Nom_1__menage_" type="id_String"/>
+        <mapperTableEntries name="W_LV_Prenom_1__menage_" expression="row4.W_LV_Prenom_1__menage_" type="id_String"/>
+        <mapperTableEntries name="W_LV_Nom_2__menage_" expression="row4.W_LV_Nom_2__menage_" type="id_String"/>
+        <mapperTableEntries name="W_LV_prenom_2__menage_" expression="row4.W_LV_prenom_2__menage_" type="id_String"/>
+        <mapperTableEntries name="W_LVPC_Date_entree" expression="row4.W_LVPC_Date_entree" type="id_Date"/>
+        <mapperTableEntries name="W_LVPC_Date_depart" expression="row4.W_LVPC_Date_depart" type="id_Date"/>
+        <mapperTableEntries name="W_CV_Solde_credit" expression="row4.W_CV_Solde_credit" type="id_Float"/>
+        <mapperTableEntries name="W_CV_Solde_debit" expression="row4.W_CV_Solde_debit" type="id_Float"/>
+        <mapperTableEntries name="PCCA_Solde_DG_credit" expression="row4.PCCA_Solde_DG_credit" type="id_Float"/>
+        <mapperTableEntries name="PCCA_Solde_DG_debit" expression="row4.PCCA_Solde_DG_debit" type="id_Float"/>
+        <mapperTableEntries name="PCCA_Solde_APL_credit" expression="row4.PCCA_Solde_APL_credit" type="id_Float"/>
+        <mapperTableEntries name="PCCA_Solde_APL_debit" expression="row4.PCCA_Solde_APL_debit" type="id_Float"/>
+        <mapperTableEntries name="LVPA_Niveau_1" expression="row4.LVPA_Niveau_1" type="id_Integer"/>
+        <mapperTableEntries name="LVPA_Niveau_2" expression="row4.LVPA_Niveau_2" type="id_Integer"/>
+        <mapperTableEntries name="LVPA_Niveau_3" expression="row4.LVPA_Niveau_3" type="id_Integer"/>
+        <mapperTableEntries name="LVPA_Niveau_4" expression="row4.LVPA_Niveau_4" type="id_Integer"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <outputTables sizeState="INTERMEDIATE" name="oui"/>
+      <outputTables sizeState="INTERMEDIATE" name="csv_out"/>
+      <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="LVDF_Numero_dossier_facturation" type="id_Float"/>
         <mapperTableEntries name="LVME_Numero_menage" type="id_Float"/>
         <mapperTableEntries name="W_LV_Nom_1__menage_" type="id_String"/>
@@ -348,7 +477,7 @@
         <mapperTableEntries name="LVPA_Niveau_4" type="id_Integer"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="NO_DOSFACT" expression="row2.LVDF_Numero_dossier_facturation " type="id_Float" nullable="true" operator="="/>
+        <mapperTableEntries name="NO_DOSFACT" expression="row4.LVDF_Numero_dossier_facturation " type="id_Float" nullable="true" operator="="/>
         <mapperTableEntries name="ID_DOSCLIE" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="CD_NATFACT" type="id_String" nullable="true"/>
         <mapperTableEntries name="LB_NATFACT" type="id_String" nullable="true"/>
@@ -356,10 +485,10 @@
         <mapperTableEntries name="PRE_CLIENT" type="id_String" nullable="true"/>
         <mapperTableEntries name="ON_PARTI" type="id_String" nullable="true"/>
         <mapperTableEntries name="CD_PHYMOR" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CD_PATRIM1" expression="row2.LVPA_Niveau_1 " type="id_Integer" nullable="true" operator="="/>
-        <mapperTableEntries name="CD_PATRIM2" expression="row2.LVPA_Niveau_2 " type="id_Integer" nullable="true" operator="="/>
-        <mapperTableEntries name="CD_PATRIM3" expression="row2.LVPA_Niveau_3 " type="id_Integer" nullable="true" operator="="/>
-        <mapperTableEntries name="CD_PATRIM4" expression="row2.LVPA_Niveau_4 " type="id_Integer" nullable="true" operator="="/>
+        <mapperTableEntries name="CD_PATRIM1" expression="row4.LVPA_Niveau_1 " type="id_Integer" nullable="true" operator="="/>
+        <mapperTableEntries name="CD_PATRIM2" expression="row4.LVPA_Niveau_2 " type="id_Integer" nullable="true" operator="="/>
+        <mapperTableEntries name="CD_PATRIM3" expression="row4.LVPA_Niveau_3 " type="id_Integer" nullable="true" operator="="/>
+        <mapperTableEntries name="CD_PATRIM4" expression="row4.LVPA_Niveau_4 " type="id_Integer" nullable="true" operator="="/>
         <mapperTableEntries name="CD_PATRIM" type="id_String" nullable="true"/>
         <mapperTableEntries name="CD_LOCALI1" type="id_String" nullable="true"/>
         <mapperTableEntries name="CD_SOCPROP" type="id_BigDecimal" nullable="true"/>
@@ -376,7 +505,7 @@
         <mapperTableEntries name="ON_CLI_CTX" type="id_String" nullable="true"/>
         <mapperTableEntries name="ON_CLI_SUIVSOC" type="id_String" nullable="true"/>
         <mapperTableEntries name="NB_DEBITEUR" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="MT_SOLD_DEB" expression="row2.W_CV_Solde_debit " type="id_Float" nullable="true" operator="="/>
+        <mapperTableEntries name="MT_SOLD_DEB" expression="row4.W_CV_Solde_debit " type="id_Float" nullable="true" operator="="/>
         <mapperTableEntries name="NB_ECHLOY" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="NB_ECHRES" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="NB_MOIS_PREIMP" type="id_BigDecimal" nullable="true"/>
@@ -394,7 +523,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="192">
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_1" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
@@ -449,7 +578,7 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROTECT_FILE" value="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:47WHd9SHYgkUCIflECBAhn3Gfo9JIUDgcuPHz4Hu" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:CnPHl/TWv1GlwvAiDXl5c6jiZkzaG+Sqo3B4cQRo" show="false"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
     <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="100" show="false"/>
@@ -483,7 +612,7 @@
       <column comment="" defaultValue="" key="false" length="5" name="LVPA_Niveau_4" nullable="false" originalDbColumnName="LVPA-Niveau 4" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="352">
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
@@ -494,7 +623,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JK7WWC3/LiURZPJJ69ILpO2KgOqibbgjFbiMpsz0" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wmbeQjcvILWbuJnCKxVi9GyTt71b7Dsz4LDIa+xx" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;SID_IMP_CLIEN_GIM&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -645,6 +774,57 @@
       <column comment="" key="false" length="60" name="SID_PLG_ANC_DEP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1"/>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend/TOS_DI-Win32-20200219_1130-V7.3.1/workspace/out.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1"/>
+  </node>
   <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -656,7 +836,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;ACGINFO1&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8uluI5P792kMsDsBZJaKbr0YIzYg50uqVcGW/p8L"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:488YQy8s0cwR2/v45rieR4HJ9eVXtfG1MT7biFH0"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;instance=DECISIONNELLE&quot;"/>
@@ -674,13 +854,25 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tAggregateRow_1" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_1" target="tMap_1">
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tAggregateRow_1" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_1" target="tUniqRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputExcel_1">
+  <connection connectorName="UNIQUE" label="row4" lineStyle="0" metaname="tUniqRow_1" offsetLabelX="0" offsetLabelY="0" source="tUniqRow_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tFileOutputExcel_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="oui" lineStyle="0" metaname="oui" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="oui" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="csv_out" lineStyle="0" metaname="csv_out" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tMap_1" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="csv_out" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row3" lineStyle="8" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
