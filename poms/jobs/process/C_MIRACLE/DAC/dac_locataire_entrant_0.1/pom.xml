@@ -163,6 +163,11 @@
       <version>2.1.1</version>
     </dependency>
     <dependency>
+      <groupId>com.enterprisedt</groupId>
+      <artifactId>edtftpj</artifactId>
+      <version>2.5.0</version>
+    </dependency>
+    <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>ehcache-2.10.6</artifactId>
       <version>6.0.0</version>
@@ -175,6 +180,11 @@
     <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>guava-27.0.1-android</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>jakarta-oro-2.0.8</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
